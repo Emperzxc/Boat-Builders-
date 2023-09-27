@@ -1,0 +1,542 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh; 
+    background-color: #949191;
+    background-size: cover ; 
+    background-position: center; 
+    display: flex;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+ }
+
+.logo img{
+    user-select: none;
+    width: 100px;
+    height: auto;
+    margin-left: -50px;
+    margin-top: -40px;
+    margin-bottom: 6px;
+    scale: 160%;
+}
+.address{
+    font-size: 1.5em;
+    color: #000;
+    user-select: none;
+    font-weight: bold;
+    margin-left:-410px;
+    scale: 150%;
+    
+}
+.sub{
+    font-size: 1em;
+    scale: 50%;
+    color: #000;
+    user-select: none;
+    font-weight: bolder;
+    text-align: center;
+    margin-left:-190px;
+    margin-top: -15px;
+    
+}
+.navigation a{
+    font-weight: bolder;
+    position: relative;
+    font-size: 1.5em;
+    color: #000;
+    text-decoration: none;
+    margin-left: 40px;
+}
+/* Style for the active link */
+.navigation a.active {
+    color: red;
+    font-weight: bold;
+
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #000;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0); 
+    transition: transform .5s;
+    
+}
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+/* button style*/
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.button {
+    width: 300px;
+    height: 300px;
+    background-color: #fff; /* Change the background color as needed */
+    color: rgb(59, 59, 59);
+    border: none;
+    display: flex;
+    border-radius: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: light;
+    margin-top:200px;
+    margin-right: 60px;
+    margin-left: 60px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
+    transition: transform 0.2s;
+}
+.button:hover {
+    transform: translateY(-5px); /* Add a slight lift on hover */
+    color: #000;
+}
+
+.button i {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+/*Sidebar styles*/
+.sidebar {
+    width: 320px; 
+    height: cover;
+    background-color: #bdbcbc;
+    color: #000;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 112px;
+    align-items: center;
+    z-index: 99;
+   
+  }
+  .tab-pane {
+    display: none;
+  }
+.tabs {
+    scale: 75%;
+    list-style: none;
+    margin-top: -40px;
+  }
+  
+  .tab {
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    font-size: 27px;
+    color: #000;
+    text-decoration: none;
+    display:list-item;
+    padding: 10px;
+    font-weight: bolder;
+    margin-top: 60px;
+    text-align: center; 
+
+}
+  .tab i {
+    margin-right: 25px;
+    font-size: 40px;
+  }
+
+.tab::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 120%;
+  height: 1px;
+  background: #000;
+  border-radius: 5px;
+  margin-left: -25PX;
+  margin-top: 100px;
+
+}
+.tab.active {
+    background-color: #525050;
+    color: #fff;
+
+  }
+
+h2 {
+    text-align: center;
+    color: red;
+}
+/*Styles FGr table on manage Booking*/
+
+
+/* Page heading style */
+h1 {
+    margin-top: -60px;
+    margin-left: 150px;
+    color: #383636;
+    padding: 20px;
+    text-align: left;
+}* {
+    /* Change your font family */
+    font-family: sans-serif;
+}
+/* Style for payments table*/
+.content-table2-container{
+    border-radius: 5px 5px 0 0;
+    margin-top: 10px;
+    margin-left: 50px;
+    max-height: 430px; /* Set the maximum height you want */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.content-table2 {
+    width: 923px;
+    border-collapse: collapse;
+    font-size: 0.6em;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table2 thead {
+    background-color: rgb(221, 14, 14);
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+}
+
+.content-table2 th,
+.content-table2 td {
+    text-align: center;
+    padding: 7px 10px;
+    text-align: left;
+}
+.content-table2 tbody{
+    max-height:300px; /* Set the maximum height for the tbody */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.content-table2 tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+.content-table2 tbody tr:nth-child(even):hover {
+    background-color: rgba(233, 139, 139, 0.3);
+    cursor: pointer;
+}
+.content-table2 tbody tr:nth-child(odd) {
+    background-color: #c5c5c5;
+}
+.content-table2 tbody tr:nth-child(odd):hover {
+    background-color:  rgba(122, 64, 64, 0.3);
+    cursor: pointer;
+}
+.content-table2 tbody tr:last-child {
+    border-bottom: 2px solid rgb(221, 14, 14);
+}
+
+/*content table for booking*/
+.content-table1-container{
+    border-radius: 5px 5px 0 0;
+    margin-top: 10px;
+    margin-left: 50px;
+    max-height: 430px; /* Set the maximum height you want */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.content-table1 {
+    width: 923px;
+    border-collapse: collapse;
+    font-size: 0.75em;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table1 thead {
+    background-color: rgb(221, 14, 14);
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+}
+
+.content-table1 th,
+.content-table1 td {
+    text-align: center;
+    padding: 7px 10px;
+    text-align: left;
+}
+
+.content-table1 tbody{
+    max-height:300px; 
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.content-table1 tbody tr {
+    border-bottom: 1px solid #dddddd;
+    transition: background-color 0.3s;
+}
+
+.content-table1 tbody tr:hover {
+    background-color: rgba(221, 14, 14, 0.3);
+    cursor: pointer;
+}
+
+.content-table1 tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+.content-table1 tbody tr:nth-child(even):hover {
+    background-color: rgba(233, 139, 139, 0.3);
+    cursor: pointer;
+}
+.content-table1 tbody tr:nth-child(odd) {
+    background-color: #c5c5c5;
+}
+.content-table1 tbody tr:nth-child(odd):hover {
+    background-color: rgba(122, 64, 64, 0.3);
+    cursor: pointer;
+}
+.content-table1 tbody tr:last-child {
+    border-bottom: 2px solid rgb(221, 14, 14);
+}
+/*style for product stocks table*/
+.content-table3-container{
+    border-radius: 5px 5px 0 0;
+    margin-top: 10px;
+    margin-left: 50px;
+    max-height: 430px; /* Set the maximum height you want */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.content-table3 {
+    width: 923px;
+    border-collapse: collapse;
+    font-size: 0.75em;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table3 thead {
+    background-color: rgb(221, 14, 14);
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+}
+
+.content-table3 th,
+.content-table3 td {
+    text-align: center;
+    padding: 7px 10px;
+    text-align: left;
+}
+.content-table3 tbody{
+    max-height:300px; /* Set the maximum height for the tbody */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.content-table3 tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+.content-table3 tbody tr:nth-child(even):hover {
+    background-color: rgba(233, 139, 139, 0.3);
+    cursor: pointer;
+}
+.content-table3 tbody tr:nth-child(odd) {
+    background-color: #c5c5c5;
+}
+.content-table3 tbody tr:nth-child(odd):hover {
+    background-color:  rgba(122, 64, 64, 0.3);
+    cursor: pointer;
+}
+.content-table3 tbody tr:last-child {
+    border-bottom: 2px solid rgb(221, 14, 14);
+}
+
+ /* Updated modal styles */
+ .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin-top:200px;
+    margin-left:550px;
+    padding: 20px;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    width: 40%;
+    max-height:150%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+    color: #555;
+    font-size: 24px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h2 {
+    color: red;
+}
+
+/* Improved form styles */
+.modal-body {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    
+}
+
+label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: .5px solid #ccc;
+    color: black;
+    background-color: #dfd9d9;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.btn-primary {
+background-color: red;
+width: 150px;
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+font-weight: bolder;
+margin-left: 170px;
+
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    background-color: rgb(247, 34, 34);
+color: #fff;
+}
+
+/* Style for the filter form */
+.filter-form {
+    margin-left: 50px;
+    margin-top: 140px;
+    margin-bottom: 20px;
+}
+
+.filter-form label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.filter-form select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button{
+    background-color: red;
+    max-width: 100px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+button:hover{
+    transform: translateY(-3px);
+    background-color: rgb(247, 34, 34);
+    color: #fff;
+}
+.trys{
+    margin-top: 200px;
+    margin-left: 200px;
+    background-color: #fff;
+
+}
+.cal{
+    display: flex;
+    scale: 80%;
+    border-radius: 15%;
+    margin-top: 70px;
+    padding: 20px;
+    height: 600px;
+    width: 1400px;
+    margin-left: 80px;
+    position: relative;
+    }
+
+    .search-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    
+    #boatIDSearch {
+        margin-right: 10px;
+        padding: 7px; 
+        border-radius: 5px;
+        border: none;
+    }
+    #orderIDSearch {
+        margin-right: 10px;
+        padding: 7px; 
+        border-radius: 5px;
+        border: none;
+    }
+    #orderIDSearch2 {
+        margin-right: 10px;
+        padding: 7px; 
+        border-radius: 5px;
+        border: none;
+    }

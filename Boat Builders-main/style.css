@@ -1,0 +1,215 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh; 
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(image/background.jpeg);
+    background-size: cover ; 
+    background-position: center; 
+    display: flex;
+}
+/*content styles*/
+
+.left-content {
+    background-color: #fff;
+    opacity: 50%;
+    border: 3px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 200px;
+    width: 700px; 
+    height: 400px;/* Adjust the width as needed */
+    text-align: center;
+    margin-left: 100px;
+}
+.left-content h2{
+    margin-top: -500px;
+    margin-left: -100px ;
+}
+.left-content img{
+    margin-left: -550px   ;
+    margin-top: -400px;
+    scale: 10%;
+}
+.right-content {
+    scale: 110%;
+    margin-left: 480px;
+    width: 400px; /* Adjust the width as needed */
+    text-align: center;
+    vertical-align: middle;
+    align-self: center;
+}
+
+.login-box {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 90%;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+
+    margin-bottom: 15px;
+    text-align: left;
+}
+p{
+    font-size: 15px;
+    color: white;
+    margin-bottom: -10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: .5px solid #ccc;
+    color: black;
+    background-color: #dfd9d9;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.forgot-password {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+.forgot-password:hover {
+    color: red;
+}
+
+button {
+    background-color: red;
+    width: 150px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 120px;
+    font-weight: bolder;
+}
+
+button:hover {
+    background-color: rgb(247, 34, 34);
+    color: #000;
+}
+.cal{
+display: flex;
+scale: 80%;
+border-radius: 15%;
+margin-top: 70px;
+padding: 20px;
+height: 600px;
+width: 1400px;
+margin-left: 80px;
+position: relative;
+}
+
+/* Modal Styles */
+
+
+.modal {
+    margin-top: -100px;
+
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.modal-content {
+  
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0,100);
+    text-align: center;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Input Field Styles */
+.input-group {
+    margin: 10px 0;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.input-group .reset{
+    background-color: red;
+    width: 150px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 0px;
+    font-weight: bolder;
+}
+
+/* Center the Modal on Small Screens */
+@media screen and (max-width: 600px) {
+    .modal-content {
+        width: 80%;
+    }
+}
